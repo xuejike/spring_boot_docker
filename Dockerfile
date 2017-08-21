@@ -1,3 +1,3 @@
 FROM java:8
-RUN echo $APP
-CMD java -jar /web/server.jar
+COPY ./start.sh /start.sh
+CMD start.sh
