@@ -4,6 +4,9 @@ if [ $APP ];then
 else
    APP="/web/server.jar"
 fi
+if [ ! -f "$APP" ]; then  
+　　echo "文件不存在"  
+fi  
 cp $APP /server.jar
 
 if [ $APP_PARAM ];then
